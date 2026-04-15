@@ -2,20 +2,7 @@ defaultNamespace: guacamole
 helm:
   repo: https://repo.helmforge.dev
   chart: guacamole
-  releaseName: guacamole-app
-  values:
-    guacamole:
-      client:
-        env:
-          - name: OPENID_AUTHORIZATION_ENDPOINT
-            value: "https://auth.yourdomain.com/application/o/guacamole/authorize/"
-          - name: OPENID_JWKS_ENDPOINT
-            value: "https://auth.yourdomain.com/application/o/guacamole/jwks/"
-          - name: OPENID_ISSUER
-            value: "https://auth.yourdomain.com/application/o/guacamole/"
-          - name: OPENID_CLIENT_ID
-            value: "ID_FROM_IDENTITY_CLUSTER"
-          - name: OPENID_REDIRECT_URI
-            value: "https://remote.yourdomain.com/guacamole/"
-      postgresql:
-        enabled: true # Guacamole needs its own DB for connection metadata
+  releaseName: guacamole
+  version: "1.4.7"
+  valuesFiles:
+    - values.yaml

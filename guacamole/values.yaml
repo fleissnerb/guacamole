@@ -1,0 +1,15 @@
+guacamole:
+  client:
+    env:
+      - name: OPENID_AUTHORIZATION_ENDPOINT
+        value: "https://auth.crust.life/application/o/guacamole/authorize/"
+      - name: OPENID_JWKS_ENDPOINT
+        value: "https://auth.crust.life/application/o/guacamole/jwks/"
+      - name: OPENID_ISSUER
+        value: "https://auth.crust.life/application/o/guacamole/"
+      - name: OPENID_CLIENT_ID
+        value: "ID_FROM_IDENTITY_CLUSTER"
+      - name: OPENID_REDIRECT_URI
+        value: "https://remote.crust.life/guacamole/"
+  postgresql:
+    enabled: true
