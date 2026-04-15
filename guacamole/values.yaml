@@ -13,3 +13,8 @@ guacamole:
         value: "https://remote.crust.life/guacamole/"
   postgresql:
     enabled: true
+    primary:
+    persistence:
+      enabled: true
+      storageClass: "harvester-longhorn"
+      size: 10Gi
