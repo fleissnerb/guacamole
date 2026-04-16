@@ -1,3 +1,5 @@
+initDb:
+  enabled: false
 oidc:
   enabled: true
   authorizationEndpoint: "https://auth.crust.life/application/o/guacamole/authorize/"
