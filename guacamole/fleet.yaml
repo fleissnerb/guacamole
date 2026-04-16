@@ -1,8 +1,6 @@
 defaultNamespace: guacamole
 dependsOn:
-  - selector:
-      matchLabels:
-        bundle: authentik
+  - name: authentik-authentik
 helm:
   repo: https://repo.helmforge.dev
   chart: guacamole
