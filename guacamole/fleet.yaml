@@ -1,6 +1,4 @@
 defaultNamespace: guacamole
-dependsOn:
-  - name: authentik-authentik
 helm:
   repo: https://repo.helmforge.dev
   chart: guacamole
