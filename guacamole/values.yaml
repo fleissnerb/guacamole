@@ -7,4 +7,4 @@ oidc:
   redirectUri: "https://remote.crust.life/guacamole/"
 postgresql:
   auth:
-    existingSecret: "guacamole-db-secret"
+    existingSecret: "	guacamole-guacamole-database"
